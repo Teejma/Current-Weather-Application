@@ -1,0 +1,52 @@
+body {
+    background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%); 
+}
+div {
+    background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);;
+width: 600px;
+margin: 40px auto;
+padding: 40px;
+border-radius: 6px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+header {
+    border-bottom: 1px solid pink;
+    padding-bottom: 20px;
+}
+footer {
+    border-top: 1px solid pink;
+    padding: 20px;
+}
+.weather-degrees {
+    display: flex;
+    position: fixed;
+    justify-content: end;
+    top: 130px;
+    right: 320px;
+    font-size: 38px;
+}
+.humidity-percentage {
+    color: #662967;
+}
+.wind-speed {
+    color: #662967;
+}
+.weather-details {
+    color: #9D9D9D;
+    line-height: 1.5;
+}
+.enter-city {
+    background:linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%); 
+border: none;
+padding: 15px;
+border-radius: 5px;
+width: 70%;
+}
+.search-city {
+    background:#662967;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    width: 15%;
+    color: white;
+}
