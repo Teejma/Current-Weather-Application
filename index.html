@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+   <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>Today's Weather</title>
 </head>
 <div>
@@ -19,10 +19,10 @@
         
     </h1>
     <p class="weather-details">
-        Thursday 09:39 Sunny
+        <span id="date-time"></span> <span id="description"></span>
         <br>
-        Humidity: <strong class="humidity-percentage">67%</strong>  
-        Wind: <strong class="wind-speed">6.7km/h</strong>
+        Humidity: <strong class="humidity-percentage" id="humidity-percentage"></strong>  
+        Wind: <strong class="wind-speed" id="wind-speed"></strong>
     </p>
     <p class="weather-degrees">
         ☀️<span id="temperature">25</span>°C
