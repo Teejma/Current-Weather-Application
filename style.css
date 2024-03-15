@@ -17,14 +17,7 @@ footer {
     border-top: 1px solid pink;
     padding: 20px;
 }
-.weather-degrees {
-    display: flex;
-    position: fixed;
-    justify-content: end;
-    top: 130px;
-    right: 320px;
-    font-size: 38px;
-}
+
 .humidity-percentage {
     color: #662967;
 }
@@ -49,4 +42,23 @@ width: 70%;
     border-radius: 5px;
     width: 15%;
     color: white;
+}
+.weather-degrees {
+    display: flex;
+    position: fixed;
+    justify-content: end;
+    top: 130px;
+    right: 320px;
+    
+}
+.icon {
+    font-size: 20px;
+    margin-top: 5px;
+}
+.temperature {
+    font-size: 88px;
+}
+.celsius {
+    font-size: 20px;
+    margin-top: 20px;
 }

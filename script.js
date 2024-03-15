@@ -13,6 +13,8 @@ windSpeedElement.innerHTML= `${response.data.wind.speed}km/h`;
 let dateTimeElement = document.querySelector("#date-time");
 let date = new Date(response.data.time * 1000);
 dateTimeElement.innerHTML= displayDate(date);
+let iconElement = document.querySelector("#icon");
+iconElement.innerHTML= `<img src="${response.data.condition.icon_url}">`;
 }
 function displayDate (date) {
   let hours = date.getHours();
