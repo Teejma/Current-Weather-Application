@@ -15,6 +15,8 @@ let date = new Date(response.data.time * 1000);
 dateTimeElement.innerHTML= displayDate(date);
 let iconElement = document.querySelector("#icon");
 iconElement.innerHTML= `<img src="${response.data.condition.icon_url}">`;
+
+displayForecastWeather(response.data.city);
 }
 function displayDate (date) {
   let hours = date.getHours();
@@ -52,7 +54,30 @@ function displayCity (event) {
      searchCity (enterCityInput.value);
   
 }
+function displayForecastWeather (city) {
+  let apiKey = "16b4b9bft43b0d3a60caoa604550fe80";
+  let apiURL = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+axios.get(apiURL).then(displayForecast);
+}
 
+function displayForecast () {
+  let days = ["Tues", "Wed", "Thurs", "Fri", "Sat"];
+  let forecastHtml= "";
+  
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+   <div class="forecast-weather">
+ <div class="forecast-date">${day}</div>
+ <div class="forecast-icon">🌤️</div>
+<div>15° 9°</div>
+</div> 
+`;
+  });
+  let forecastWeather = document.querySelector("#forecast-weather");
+  forecastWeather.innerHTML = forecastHtml;
+  }
 let form = document.querySelector("form");
 form.addEventListener("submit", displayCity);
 
